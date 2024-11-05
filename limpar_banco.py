@@ -1,9 +1,10 @@
 import psycopg2
+from decouple import config
 
 conexao = psycopg2.connect(
-    dbname="projeto_csv",
-    user="projeto_csv",
-    password="projeto_csv",
+    dbname=config('POSTGRES_DB'),
+    user=config('POSTGRES_USER'),
+    password=config('POSTGRES_PASSWORD'),
     host="localhost",
     port="5432"
 )
