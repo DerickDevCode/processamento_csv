@@ -1,0 +1,3 @@
+POSTGRES_PASSWORD=defina sua senha do banco de dados aqui
+POSTGRES_USER=defina seu usuário do banco de dados aqui
+POSTGRES_DB=defina o nome do seu banco de dados aqui
