@@ -1,4 +1,4 @@
-# Processamento de arquivos CSV com técnicas em lote
+<h1 align="center" style="font-weight: bold;">Processamento de arquivos CSV com técnicas em lote</h1>
 
 Projeto que compara a eficiência de diferentes técnicas de processamento de arquivos csv para banco de dados.
 
@@ -11,27 +11,41 @@ Projeto que compara a eficiência de diferentes técnicas de processamento de ar
 - PostgreSQL
 - Celery
 
-## passo a passo para rodar o projeto.
+## Passo a passo para rodar o projeto.
 
-- Clone o projeto localmente com o comando:
+Clone o projeto localmente com o comando:
+
   ```bash
   git clone https://github.com/DerickDevCode/processamento_csv.git
   ```
 
-- Instale as dependências usando poetry com o comando:
+### Instale as dependências usando poetry.
+
+Caso não tenha o Poetry instalado, instale-o com o comando:
+
+  ```bash
+  curl -sSL https://install.python-poetry.org | python3 -
+  ```
+
+Com o Poetry instalado, instale as dependências com o comando:
+
   ```bash
   poetry install
   ```
 
-- Crie o seu arquivo .env e defina as variáveis de ambiente baseadas no arquivo env-sample:
+### Crie o seu arquivo .env e defina as variáveis de ambiente baseadas no arquivo env-sample:
+
   ```yaml
   POSTGRES_PASSWORD=defina sua senha do banco de dados aqui
   POSTGRES_USER=defina seu usuário do banco de dados aqui
   POSTGRES_DB=defina o nome do seu banco de dados aqui
   ```
 
-- Após definir as variáveis de ambiente do Postgres acima, Suba um banco Postgresql e um Rabbitmq usando o
-  docker-compose.yml:
+### Configurando o banco de dados PostgreSQL e o message broker RabbitMQ.
+
+Após definir as variáveis de ambiente do PostgreSQL acima, suba um banco PostgreSQL e um RabbitMQ usando o
+docker-compose.yml:
+
   ```bash
   docker compose up
   ```
