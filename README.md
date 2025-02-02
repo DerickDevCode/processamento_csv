@@ -58,7 +58,6 @@ Os arquivos para configurar o processamento dos dados de forma síncrona são:
 
 - [processar_dados_um_por_um.py](processar_dados_um_por_um.py)
 - [processar_dados_em_lote.py](processar_dados_em_lote.py)
-- [processar_dados_dois_arquivos_por_vez.py](processar_dados_dois_arquivos_por_vez.py)
 
 As tasks para fazer o processamento assíncrono dos arquivos se encontram em [tasks.py](tasks.py) e você pode executá-las
 rodando o arquivo [run_tasks.py](run_tasks.py)
